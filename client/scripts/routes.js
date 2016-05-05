@@ -8,11 +8,6 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
 			templateUrl: 'client/templates/first-page.html',
 			controller: 'FirstPageController as firstCtrl'
     	})
-		.state('second-page', {
-			url: '/second-page',
-			templateUrl: 'client/templates/second-page.html',
-			controller: 'SecondPageController as secondCtrl'
-		})
 		;
 		$locationProvider.html5Mode({
 			enabled: true,

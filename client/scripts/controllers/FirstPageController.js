@@ -12,7 +12,7 @@ function FirstPageController($location, $scope, $http) {
 			.then(function(response) {
 			teste = response.data;
 			console.log(teste);
-			$scope.queryResult = teste;
+			$scope.queryResult = JSON.stringify(teste, null, "\t");;
 		});
     }
 }
