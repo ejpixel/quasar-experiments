@@ -11,5 +11,5 @@ if (Meteor.isCordova) {
 }
 
 function onReady() {
-angular.bootstrap(document, ["quasar-experiment"]);
+	angular.bootstrap(document, ["quasar-experiment"]);
 }

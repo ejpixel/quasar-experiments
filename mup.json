@@ -1,0 +1,24 @@
+{
+ "servers": [
+    {
+      "host": "52.38.152.235",
+      "username": "ubuntu",
+      "pem": "/home/decio/Documents/amazon/lightchat.pem",
+      "env": {}
+    }
+  ],
+  "setupMongo": false,
+  "setupNode": true,
+  "nodeVersion": "5.10.1",
+  "setupPhantom": true,
+  "enableUploadProgressBar": true,
+  "appName": "quasar-experiment",
+  "app": "/home/decio/Documents/quasar-experiment",
+
+  "env": {
+    "PORT": 90,
+    "ROOT_URL": "http://lightchat.noip.me/"
+  },
+
+  "deployCheckWaitTime": 150
+}

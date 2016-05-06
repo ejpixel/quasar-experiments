@@ -6,13 +6,14 @@ function FirstPageController($location, $scope, $http) {
 
     vm.getReq = function() {
 
-		// var query = "select * from chats";
 		let query = $scope.firstCtrl.query;
-		$http.get("http://localhost:9090/query/fs/meteor/?q="+query)
-			.then(function(response) {
-			teste = response.data;
-			console.log(teste);
-			$scope.queryResult = JSON.stringify(teste, null, "\t");;
-		});
+		Meteor.call('makeCall',query);
+
+		Tracker.autorun(function(){
+	        let response = Widgets.find();
+			$scope.queryResult = response;
+	        if (!$scope.$$phase){$scope.$apply();}
+      	});
+
     }
 }
