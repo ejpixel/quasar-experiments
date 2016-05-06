@@ -1,5 +1,23 @@
 <ion-view title="Page1">
     <ion-content class="_page1">
+		<ion-item>
+			<ion-textarea>
+				Esta é uma aplicação demonstrativa para mostrar como
+				funcionará o backend do einstein. Ela se conecta à uma base de teste
+				que se encontra nesse servidor. Pode ser acessada através em
+				http://lightchat.noip.me, onde também podem ser inseridos novos dados a partir
+				uso do app. Nessa base existem as coleções chats, messages e users
+			</ion-textarea>
+			<ion-label>Algumas queries de teste:</ion-label>
+			<ul>
+				<li>
+					select * from chats
+				</li>
+				<li>
+					select * from messages where sentBy =
+				</li>
+			</ul>
+		</ion-item>
 		<div class="item item-input-inset">
 			<label class="item-input-wrapper">
 				<input type="text" ng-model="firstCtrl.query" placeholder="Type your message">
