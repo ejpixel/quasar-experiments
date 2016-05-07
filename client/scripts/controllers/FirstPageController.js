@@ -10,6 +10,7 @@ function FirstPageController($location, $scope, $http) {
 		Meteor.call('makeCall',query);
 
 		Tracker.autorun(function(){
+			console.log(Widgets.find().fetch());
 			if(Widgets.find().fetch()[0]){
 		        let response = Widgets.find().fetch()[0].param1;
 				$scope.queryResult = response;

@@ -7,7 +7,7 @@
       "env": {}
     }
   ],
-  "setupMongo": false,
+  "setupMongo": true,
   "setupNode": true,
   "nodeVersion": "5.10.1",
   "setupPhantom": true,
